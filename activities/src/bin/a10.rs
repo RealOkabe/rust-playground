@@ -12,4 +12,15 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+fn compare_to_hundred(num: i32) {
+    let is_greater_than_hundred = num > 100;
+    match is_greater_than_hundred {
+        true => println!("its big"),
+        false => println!("its small"),
+    }
+}
+
+fn main() {
+    let num = 101;
+    compare_to_hundred(num);
+}
